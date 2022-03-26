@@ -30,7 +30,7 @@ int countPairs2(int *arr, int len, int value) {
 }
 int countPairs3(int *arr, int len, int value) {
   int count = 0, LBound = 0, RBound = len - 1;
-  while (LBound, RBound - 1) {
+  while (LBound < RBound - 1) {
     int middle_1 = (LBound + RBound) / 2;
     if (arr[middle_1] <= value)
       LBound = middle_1;
